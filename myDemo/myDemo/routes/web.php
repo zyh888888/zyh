@@ -23,3 +23,7 @@ Route::prefix('Admin')->group(function(){
     Route::get('detail/{id}',"MyController@show")->middleware('my.check')->name('show');
 
 });
+
+Route::get('test',function(){
+    return 'yes';
+});
